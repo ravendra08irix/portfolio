@@ -2,10 +2,12 @@ import React from 'react';
 
 const Timeline = () => {
   const timelineData = [
-    { year: '2020', work: 'Started learning React' },
-    { year: '2021', work: 'Built first portfolio website' },
-    { year: '2022', work: 'Worked on several React projects' },
-    { year: '2023', work: 'Advanced to full-stack development' },
+    { year: '2024- present', work: 'Working as Software Engineer' },
+    { year: '2022-2023', work: 'Working as Software Engineer Trainee' },
+    { year: '2020-2022', work: 'Post Graduation - Master of Compute Application( MCA )' },
+    { year: '2017-2020', work: 'Under Graduation - Basic of Science(Computer Science)' },
+    { year: '2016', work: 'Intermediate' },
+    { year: '2014', work: 'HighSchool' },
   ];
 
   // Inline styles for keyframes and animation
@@ -80,7 +82,7 @@ const Timeline = () => {
 
   return (
     <div className="timeline-container" style={containerStyle}>
-      <h2 className="text-center mb-4">My Journey</h2>
+      <h2 className="text-center mb-4"  style={{ fontFamily: 'Oswald' }}>My Journey</h2>
       <div style={timelineStyle}>
         {timelineData.map((item, index) => (
           <div

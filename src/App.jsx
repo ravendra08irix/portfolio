@@ -12,20 +12,22 @@ const App = () => {
     <BrowserRouter>
       <div>
         <Navbar />
-        <Routes>
-          <Route
-            path="/"
-            element={
-              <>
-                <Slider />
-                <Timeline />  {/* Add Timeline component here */}
-              </>
-            }
-          />
-          <Route path="/projects" element={<Projects />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/updates" element={<Updates />} />
-        </Routes>
+        <div style={{ marginTop: '0px' }}> {/* Adjust margin-top based on the height of the Navbar */}
+          <Routes>
+            <Route
+              path="/"
+              element={
+                <>
+                  <Slider />
+                  <Timeline />  {/* Add Timeline component here */}
+                </>
+              }
+            />
+            <Route path="/projects" element={<Projects />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/updates" element={<Updates />} />
+          </Routes>
+        </div>
       </div>
     </BrowserRouter>
   );
